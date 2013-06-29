@@ -1,0 +1,51 @@
+<snippet>
+  <content><![CDATA[
+  // ==========================================
+  // Backbone Collection: ${1}
+  // Represents: ${2}
+  // Server resource path: ${3}
+  // ==========================================
+
+  ${4}.Models.${5} = Backbone.Model.extend({
+    
+
+
+    // ------------------------------------------
+    // Property: model
+    // Description: The type of model that each item in this collection represents
+    // ------------------------------------------
+    
+    model: '${6}',
+
+
+
+    // ------------------------------------------
+    // Property: url
+    // Description: The path to the server API endpoint
+    // ------------------------------------------
+    
+    url: '${7}',
+
+
+
+    // ------------------------------------------
+    // Initialize:
+    // Arguments: 
+    //    options: {}
+    // Description:
+    // ------------------------------------------
+    
+    initialize: function(options) {
+      ${0}
+    },
+
+
+
+  });
+  ]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>bbc</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+</snippet>
