@@ -13,7 +13,7 @@ These snippets are meant to enable a developer using Sublime Text to roll their 
 
 Sublime Text snippets generally live in `/Users/{username}/Library/Application Support/Sublime Text {version}/Packages/User/`
 
-A user can install the package by running the following commands, in this order, switching out the variables in {curly brackets} with their environment-specific values:
+A user can install the package by running the following commands, in this order, switching out the variables in {curly brackets} with your environment-specific values:
 
 ``` shell
 cd /Users/{user}/Library/Application\ Support/Sublime\ Text\ {version}/Packages/User && git clone git@github.com:createbang/backbone-sublime-text-snippets.git && cp backbone-sublime-text-snippets/snippets/* . && rm -rf backbone-sublime-text-snippets/
