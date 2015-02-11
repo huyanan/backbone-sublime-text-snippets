@@ -1,0 +1,22 @@
+{
+  "default": {
+    "tabTrigger": "snippets",
+    "scope": "js"
+  },
+  "backbone-collection-plugin.js": {
+    "tabTrigger": "bbcp",
+    "scope": "js"
+  },
+  "backbone-model-plugin.js": {
+    "tabTrigger": "bbmp",
+    "scope": "js"
+  },
+  "backbone-view-plugin.js": {
+    "tabTrigger": "bbvp",
+    "scope": "js"
+  },
+  "backbone-view-hu-plugin.js": {
+    "tabTrigger": "bbvhp",
+    "scope": "js"
+  }
+}
