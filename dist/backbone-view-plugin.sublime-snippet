@@ -17,7 +17,17 @@ define([
 
 	var ${1}View = Backbone.View.extend({
 
+		/**
+         * @property tagName
+         * @type String
+         */
+        tagName: '${3:div}',
 
+        /**
+         * @property className
+         * @type String
+         */
+        className: '${1}',
 
 		// ------------------------------------------
 		// Property: template
