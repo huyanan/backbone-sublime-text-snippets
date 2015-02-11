@@ -1,12 +1,21 @@
 <snippet>
   <content><![CDATA[
+define([
+  'jquery',
+  'backbone',
+  '/app/pluginCenter/plugins/${1}/${2}Model.js'
+], function(
+  \$,
+  Backbone,
+  ${2}Model
+) {
   // ==========================================
-  // Backbone Collection: ${1}
-  // Represents: ${2}
-  // Server resource path: ${3}
+  // Backbone Collection: ${2}
+  // Represents:
+  // Server resource path:
   // ==========================================
 
-  ${4}.Models.${5} = Backbone.Collection.extend({
+  var ${1}Collection = Backbone.Collection.extend({
 
 
 
@@ -15,18 +24,13 @@
     // Description: The type of model that each item in this collection represents
     // ------------------------------------------
 
-    model: '${6}',
+    model: ${2}Model,
 
 
 
-    // ------------------------------------------
-    // Property: url
-    // Description: The path to the server API endpoint
-    // ------------------------------------------
+    events:{
 
-    url: '${7}',
-
-
+    },
 
     // ------------------------------------------
     // Initialize:
@@ -36,16 +40,27 @@
     // ------------------------------------------
 
     initialize: function(options) {
-      ${0}
+      return {
+        '${1}s': this.map(function(model) {
+          return model.toJSON();
+        })
+      };
     },
+
+    toJSON: function(){
+
+    }
 
 
 
   });
+
+  return ${1}Collection;
+});
   ]]>
   </content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>bbc</tabTrigger>
+  <tabTrigger>bbcp</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
 </snippet>
