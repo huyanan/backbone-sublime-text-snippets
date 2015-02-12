@@ -18,5 +18,13 @@
   "backbone-view-hu-plugin.js": {
     "tabTrigger": "bbvhp",
     "scope": "js"
+  },
+  "ejs-each.js":{
+    "tabTrigger": "ejseach",
+    "scope": "ejs"
+  },
+  "ejs-if.js":{
+    "tabTrigger": "ejsif",
+    "scope": "ejs"
   }
 }

@@ -15,6 +15,7 @@ define([
 
 	var ${1}View = Backbone.View.extend({
 
+
 		/**
          * @property tagName
          * @type String

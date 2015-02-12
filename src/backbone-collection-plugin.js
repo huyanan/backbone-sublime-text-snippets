@@ -32,15 +32,15 @@ define([
 		// ------------------------------------------
 
 		initialize: function(options) {
+
+		},
+
+		toJSON: function(){
 			return {
 				'${1}s': this.map(function(model) {
 					return model.toJSON();
 				})
 			};
-		},
-
-		toJSON: function(){
-
 		}
 
 

@@ -114,6 +114,12 @@ module.exports = function(grunt) {
       // console.log(basename);
       // console.log(fileSnippetJson);
       var renderedFooter = grunt.template.process(footer,{data:fileSnippetJson});
+      //如果是ejs，scopeName不写,通配所有
+      console.log(fileSnippetJson['scope']);
+      if(fileSnippetJson['scope']=='ejs'){
+        // console.log(renderedFooter.match(/\<scope\>.+\<\/scope\>/,''));
+        renderedFooter = renderedFooter.replace(/\<scope\>.+\<\/scope\>/,'');
+      }
 
       grunt.file.write(p, header + sep + contents + sep + renderedFooter);
       grunt.log.writeln('File "' + p + '" created.');
