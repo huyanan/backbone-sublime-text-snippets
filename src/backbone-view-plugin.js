@@ -64,7 +64,7 @@ define([
 	    	var data = this.model.toJSON();
 
         	var html = this.template({${1}:data});
-        	this.$el.html(html);
+        	this.\$el.html(html);
 
         	return this;
 	    },
