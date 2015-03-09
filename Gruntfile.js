@@ -113,6 +113,9 @@ module.exports = function(grunt) {
       // console.log(snippetsJson);
       // console.log(basename);
       // console.log(fileSnippetJson);
+      if (!fileSnippetJson) {
+        console.error("请在snippets.json中为 "+basename+" 添加配置!");
+      }
       var renderedFooter = grunt.template.process(footer,{data:fileSnippetJson});
       //如果是ejs，scopeName不写,通配所有
       console.log(fileSnippetJson['scope']);

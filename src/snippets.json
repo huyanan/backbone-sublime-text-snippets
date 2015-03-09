@@ -26,5 +26,17 @@
   "ejs-if.js":{
     "tabTrigger": "ejsif",
     "scope": "ejs"
+  },
+  "jquery-document-ready-clouse.js":{
+    "tabTrigger": "jdrc",
+    "scope": "js"
+  },
+  "json-interface-define.js":{
+    "tabTrigger": "jid",
+    "scope": "json"
+  },
+  "json-interface-request-define.js":{
+    "tabTrigger": "jird",
+    "scope": "json"
   }
 }

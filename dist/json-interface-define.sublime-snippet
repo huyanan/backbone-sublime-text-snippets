@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+{
+  "errorCode":${1:200},
+  "errorMessage": "${2:操作成功}",
+  "data":{${4}}
+}
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>jid</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.json</scope>
+</snippet>
