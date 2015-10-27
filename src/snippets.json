@@ -38,5 +38,13 @@
   "json-interface-request-define.js":{
     "tabTrigger": "jird",
     "scope": "json"
+  },
+  "angular-$http-get.js":{
+    "tabTrigger": "httpg",
+    "scope": "js"
+  },
+  "angular-$http-post.js":{
+    "tabTrigger": "httpp",
+    "scope": "js"
   }
 }
